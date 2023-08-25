@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-25 13:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: .\main_page\settings.py:130
+msgid "English"
+msgstr "Engleză"
+
+#: .\main_page\settings.py:131
+msgid "Russian"
+msgstr "Rusă"
+
+#: .\main_page\settings.py:132
+msgid "Romanian"
+msgstr "Română"
+
+#: .\mypage\templates\mypage\index.html:183
+msgid "Projects"
+msgstr "Proiecte"
+
+#: .\mypage\templates\mypage\index.html:196
+msgid ""
+"Online store - Django backend API for a separate JS frontend\n"
+"                                    app"
+msgstr ""
+"Magazin online - Django backend API pentru o aplicație JS frontală separată"
+
+#: .\mypage\templates\mypage\index.html:227
+msgid ""
+"Online product/order website with various API - Django backend\n"
+"                                    API\n"
+"                                    with basic HTML frontend"
+msgstr ""
+"Site-ul web de produse/comenzi online cu diverse API - Django backend API cu "
+"front-end HTML de bază"
+
+#: .\mypage\templates\mypage\index.html:258
+msgid ""
+"Weather Bot for Telegram - made with Aiogram\n"
+"                                    "
+msgstr "Weather Bot pentru Telegram - realizat cu Aiogram"
+
+#: .\mypage\templates\mypage\index.html:306
+msgid "About me"
+msgstr "Despre mine"
+
+#: .\mypage\templates\mypage\index.html:309
+msgid "Coding"
+msgstr "Programare"
+
+#: .\mypage\templates\mypage\index.html:321
+msgid "Languages"
+msgstr "Limbi"
+
+#: .\mypage\templates\mypage\index.html:358
+msgid "Other"
+msgstr "Alte"
+
+#~ msgid "Welcome to our page"
+#~ msgstr "Bine ați venit pe pagina noastră"
