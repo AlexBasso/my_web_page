@@ -5,6 +5,14 @@
         padding-top: 3px;
         padding-left: 4px;
     }
+
+    .download-button {
+        margin-right: 25px;
+    }
+
+    .container-params-contact {
+        text-align: right;
+    }
 </style>
 
 
@@ -33,17 +41,22 @@
                         {% get_available_languages as LANGUAGES %}
                         {% get_language_info_list for LANGUAGES as languages %}
                         {% for language in languages %}
-                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                            {{ language.name_local }} ({{ language.code }})
-                        </option>
+                            <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}
+                                    selected{% endif %}>
+                                {{ language.name_local }} ({{ language.code }})
+                            </option>
                         {% endfor %}
                     </select>
                     <input type="submit" value="Go">
                 </form>
             </li>
+
+
             <li class="nav-item">
                 <div class="container container-params-contact">
+
                     <h4>
+
                         <a href="https://www.linkedin.com/in/alexandrbasso/"><img
                                 class="img-links-resizer img-links-first"
                                 src="img/linkedin.png" alt="linkedin"></a>
@@ -52,11 +65,13 @@
                         <a href="https://github.com/AlexBasso"><img class="img-links-resizer" src="img/github-sign.png"
                                                                     alt="githubimg"></a>
                         <a href="tel:+37378870065"><img class="img-links-resizer" src="img/smartphone.png" alt="mobile"></a>
+                        <a href="https://drive.google.com/file/d/1zUIp319E028AW2iyVyFPDC88H94ia8MH/view?usp=drive_link"
+                           class="btn btn-outline-primary download-button" target="_blank" role="button">Download
+                            CV</a>
+
                     </h4>
                 </div>
             </li>
         </ul>
-
-
     </div>
 </nav>

@@ -22,9 +22,10 @@
             crossorigin="anonymous">
     </script>
     <style>
-        .container-params-contact {
-            text-align: right;
+        body {
+            font-family: 'font', sans-serif;
         }
+
 
         .h2-margin {
             margin-bottom: 30px;
@@ -34,9 +35,16 @@
         .carousel-control-prev /*, .carousel-indicators */
         {
             filter: invert(100%);
-            width: 1%; /*put your desired width*/
+            width: 2%; /*put your desired width*/
             margin-top: 0%; /*put your desired top margin*/
+            font-size: 300px;
         }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            width: 55px;
+        }
+
 
         .container-background {
             outline: solid #0E3B6C;
@@ -106,9 +114,18 @@
             margin: auto;
         }
 
+
         .box2-div-2 {
             margin-bottom: 25px;
             margin-left: 10px;
+
+        }
+
+        .box2-div-3 {
+            max-width: 90%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 25px;
 
         }
 
@@ -155,6 +172,11 @@
 
         }
 
+        .h5-skills:hover {
+            background-color: powderblue;
+            transition: background-color .3s;
+        }
+
         .languages-style {
             margin-bottom: 20px;
         }
@@ -194,22 +216,24 @@
                             <div class="container">
                                 <h4>
                                     {% blocktranslate %}Online store - Django backend API for a separate JS frontend
-                                    app{% endblocktranslate %}
+                                        app{% endblocktranslate %}
                                 </h4>
                                 <div class="row">
                                     <div class="col-6">
                                         <ul class="skills-used-ul">
                                             <div class="skills-used-list container-background">
                                                 {% for elem in project_one %}
-                                                <li class="skills-used-li"><h5>{{elem}}</h5></li>
-                                                {% endfor%}
+                                                    <li class="skills-used-li"><h5>{{ elem }}</h5></li>
+                                                {% endfor %}
                                             </div>
                                             <div class="buttons-padding">
                                                 <a class="btn btn-primary btn-lg button-padding"
                                                    href="https://github.com/AlexBasso/Online-store"
+                                                   target="_blank"
                                                    role="button">GitHub</a>
                                                 <a class="btn btn-primary btn-lg button-padding"
                                                    href="http://89.223.124.144:8001/"
+                                                   target="_blank"
                                                    role="button">Demo</a>
                                             </div>
                                         </ul>
@@ -232,15 +256,17 @@
                                         <ul class="skills-used-ul">
                                             <div class="skills-used-list container-background">
                                                 {% for elem in project_two %}
-                                                <li class="skills-used-li"><h5>{{elem}}</h5></li>
-                                                {% endfor%}
+                                                    <li class="skills-used-li"><h5>{{ elem }}</h5></li>
+                                                {% endfor %}
                                             </div>
                                             <div class="buttons-padding">
                                                 <a class="btn btn-primary btn-lg button-padding"
                                                    href="https://github.com/AlexBasso/product_order-website"
+                                                   target="_blank"
                                                    role="button">GitHub</a>
                                                 <a class="btn btn-primary btn-lg button-padding"
                                                    href="http://89.223.124.144:8000/"
+                                                   target="_blank"
                                                    role="button">Demo</a>
                                             </div>
                                         </ul>
@@ -258,22 +284,24 @@
                             <div class="container">
                                 <h4>
                                     {% blocktranslate %}Weather Bot for Telegram - made with Aiogram
-                                    {%endblocktranslate %}
+                                    {% endblocktranslate %}
                                 </h4>
                                 <div class="row">
                                     <div class="col-6">
                                         <ul class="skills-used-ul">
                                             <div class="skills-used-list container-background">
                                                 {% for elem in project_three %}
-                                                <li class="skills-used-li"><h5>{{elem}}</h5></li>
-                                                {% endfor%}
+                                                    <li class="skills-used-li"><h5>{{ elem }}</h5></li>
+                                                {% endfor %}
                                             </div>
                                             <div class="buttons-padding">
                                                 <a class="btn btn-primary btn-lg button-padding"
                                                    href="https://github.com/AlexBasso/Weather_bot_telegram"
+                                                   target="_blank"
                                                    role="button">GitHub</a>
                                                 <a class="btn btn-primary btn-lg button-padding"
                                                    href="https://t.me/username_Tbot_1_bot"
+                                                   target="_blank"
                                                    role="button">Demo</a>
                                             </div>
                                         </ul>
@@ -306,17 +334,19 @@
         <section id="about-id" class="about">
             <div class="container container-params">
                 <h2 class="h2-margin">{% translate "About me" %}</h2>
+
+
                 <div class="row box2-centered ">
                     <div class="col-6 box2-div container-background">
-                        <h3>{% translate "Coding" %}</h3>
+                        <h3 class="languages-style">{% translate "Coding" %}</h3>
                         {% for elem_list in programing_skills %}
-                        <div class="h5-skills">
-                            <h5>{% for elem in elem_list %}
-                                {{elem}}{%if not forloop.last%},{%endif%}
-                                {% endfor%}</h5>
-                        </div>
-                        <br>
-                        {% endfor%}
+                            <div class="h5-skills">
+                                <h5>{% for elem in elem_list %}
+                                    {{ elem }}{% if not forloop.last %},{% endif %}
+                                {% endfor %}</h5>
+                            </div>
+                            <br>
+                        {% endfor %}
                     </div>
                     <div class="col-6">
                         <div class="box2-div box2-div-2 container-background">
@@ -357,14 +387,45 @@
 
                         </div>
                         <div class="box2-div box2-div-2 container-background">
-                            <h3>{% translate "Other" %}</h3>
+                            <h3 class="languages-style">{% translate "Other" %}</h3>
                             {% for elem in other_skills %}
-                            <h5 class="h5-skills other-skills">{{elem}}</h5>
-                            {% endfor%}
+                                <h5 class="h5-skills other-skills">{{ elem }}</h5>
+                            {% endfor %}
 
                         </div>
                     </div>
                 </div>
+
+
+                <div class="col-6 box2-div box2-div-3 container-background">
+                    <h3 class="languages-style">{% translate "Certificates" %}</h3>
+                    <div class="">
+                        <h4>Skillbox - Python Developer:</h4>
+                        <ul>
+                            <li><h5>
+                                <a style="text-decoration: none;"
+                                   href="https://drive.google.com/file/d/14RvRn3j9nN6EcuvOc-CmY3NOlBMWYedi/view?usp=drive_link"
+                                   target="_blank">Python fundamentals 1</a>
+                            </h5></li>
+                            <li><h5>
+                                <a style="text-decoration: none;"
+                                   href="https://drive.google.com/file/d/14RvRn3j9nN6EcuvOc-CmY3NOlBMWYedi/view?usp=drive_link"
+                                   target="_blank">Python fundamentals 2</a>
+                            </h5></li>
+                            <li><h5>
+                                <a style="text-decoration: none;"
+                                   href="https://drive.google.com/file/d/1aXqgA3pqHhymYlzW8XDZlYkLItif0vgi/view?usp=drive_link"
+                                   target="_blank">
+                                    Django Python framework</a>
+                            </h5></li>
+                            <li><h5>Python Advanced</h5></li>
+                        </ul>
+                        <h4 class="languages-style">English TOEFL: C1 level</h4>
+
+                    </div>
+                </div>
+
+
             </div>
         </section>
 

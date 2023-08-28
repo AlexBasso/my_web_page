@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 13:33+0300\n"
+"POT-Creation-Date: 2023-08-28 13:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,30 +19,30 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: .\main_page\settings.py:130
+#: .\main_page\settings.py:141
 msgid "English"
 msgstr "Engleză"
 
-#: .\main_page\settings.py:131
+#: .\main_page\settings.py:142
 msgid "Russian"
 msgstr "Rusă"
 
-#: .\main_page\settings.py:132
+#: .\main_page\settings.py:143
 msgid "Romanian"
 msgstr "Română"
 
-#: .\mypage\templates\mypage\index.html:183
+#: .\mypage\templates\mypage\index.html:204
 msgid "Projects"
 msgstr "Proiecte"
 
-#: .\mypage\templates\mypage\index.html:196
+#: .\mypage\templates\mypage\index.html:217
 msgid ""
 "Online store - Django backend API for a separate JS frontend\n"
-"                                    app"
+"                                        app"
 msgstr ""
 "Magazin online - Django backend API pentru o aplicație JS frontală separată"
 
-#: .\mypage\templates\mypage\index.html:227
+#: .\mypage\templates\mypage\index.html:250
 msgid ""
 "Online product/order website with various API - Django backend\n"
 "                                    API\n"
@@ -51,27 +51,31 @@ msgstr ""
 "Site-ul web de produse/comenzi online cu diverse API - Django backend API cu "
 "front-end HTML de bază"
 
-#: .\mypage\templates\mypage\index.html:258
+#: .\mypage\templates\mypage\index.html:285
 msgid ""
 "Weather Bot for Telegram - made with Aiogram\n"
 "                                    "
 msgstr "Weather Bot pentru Telegram - realizat cu Aiogram"
 
-#: .\mypage\templates\mypage\index.html:306
+#: .\mypage\templates\mypage\index.html:335
 msgid "About me"
 msgstr "Despre mine"
 
-#: .\mypage\templates\mypage\index.html:309
+#: .\mypage\templates\mypage\index.html:340
 msgid "Coding"
 msgstr "Programare"
 
-#: .\mypage\templates\mypage\index.html:321
+#: .\mypage\templates\mypage\index.html:352
 msgid "Languages"
 msgstr "Limbi"
 
-#: .\mypage\templates\mypage\index.html:358
+#: .\mypage\templates\mypage\index.html:389
 msgid "Other"
 msgstr "Alte"
+
+#: .\mypage\templates\mypage\index.html:400
+msgid "Certificates"
+msgstr "Certificate"
 
 #~ msgid "Welcome to our page"
 #~ msgstr "Bine ați venit pe pagina noastră"
