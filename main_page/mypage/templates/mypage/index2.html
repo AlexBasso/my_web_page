@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load i18n %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="{{ get_current_language }}/css/normalize.css" type="text/css" media="screen">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous">
+    </script>
+    <style>
+        body {
+            font-family: 'font', sans-serif;
+        }
+
+
+        .h3-margin {
+            margin-bottom: 20px;
+        }
+
+
+        .skills-used-list {
+            margin: 25px;
+            padding-left: 55px;
+            min-height: 370px;
+        }
+
+        .skills-used-ul {
+            padding-left: 23%;
+        }
+
+        .skills-used-h4 {
+            padding-left: 15%;
+        }
+
+
+        .box2-centered {
+            align-items: center;
+            align-content: center;
+        }
+
+
+        .box2-div-2 {
+            margin-bottom: 25px;
+            margin-left: 10px;
+        }
+
+        .box2-div-3 {
+            max-width: 90%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 25px;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev /*, .carousel-indicators */
+        {
+            filter: invert(100%);
+            width: 2%; /*put your desired width*/
+            margin-top: 0%; /*put your desired top margin*/
+            font-size: 300px;
+        }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            width: 55px;
+        }
+
+
+        .img-max-w {
+            width: 100%;
+            max-height: 400px;
+        }
+
+        .buttons-padding {
+            padding: 0;
+        }
+
+        .button-padding {
+            padding-left: 40px;
+            padding-right: 40px;
+            margin: 20px;
+            text-shadow: none;
+        }
+
+        .img-outline {
+            outline: transparent;
+            outline-color: #000080;
+            outline-width: 1px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+
+        .box2-div {
+            outline: transparent;
+            outline-color: #000080;
+            outline-width: 1px;
+            border-radius: 20px;
+            max-width: 570px;
+            padding: 10px;
+        }
+
+
+        .checked {
+            color: orange;
+        }
+
+
+        .h5-skills {
+            display: inline-block;
+            outline: solid;
+            outline-width: 3px;
+            outline-color: rgba(204, 184, 241, 1);
+            margin: 5px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            border-radius: 20px;
+            color: rgba(239, 233, 250, 1);
+            background-color: rgba(172, 139, 231, 1);
+            text-shadow: none;
+            font-size: 20px;
+
+        }
+
+        .h5-skills:hover {
+            background-color: rgba(204, 184, 241, 1);
+            transition: background-color .3s;
+            color: rgba(28, 5, 67, 1);
+        }
+
+        .languages-style {
+            margin-bottom: 20px;
+            color: rgba(28, 5, 67, 1);
+        }
+
+        .other-skills {
+            padding-bottom: 10px;
+        }
+
+        .img-links-resizer {
+            max-width: 2%;
+            min-width: auto;
+            height: auto;
+            margin: auto;
+            margin-right: 15px;
+        }
+
+        .img-links-first {
+            text-align: right;
+        }
+
+        .container-background {
+            margin-top: 3%;
+            margin-bottom: 3%;
+            margin-right: 10%;
+            margin-left: 10%;
+            outline: transparent;
+            outline-width: 1px;
+            background-color: rgba(226, 215, 246, 0.85);
+            padding: 25px;
+            border-radius: 20px;
+            width: 80%;
+            height: 90%;
+
+        }
+
+        .backgroud_div {
+            background-image: url('img/simple-blue.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            padding: 25px;
+        }
+
+        .text-styling {
+            color: rgba(28, 5, 67, 1);
+            background-color: gray;
+            /*text-shadow: 2px 3px 0 #FFFFFF;*/
+        }
+
+        .bar-top {
+            position: sticky;
+            position: fixed;
+            top: 0;
+            color: white;
+            background-color: rgba(226, 215, 246, 1);
+            width: 100%;
+            height: 7%;
+            left: 0;
+        }
+
+        .bar-bot {
+            position: sticky;
+            position: fixed;
+            bottom: 0;
+            color: white;
+            background-color: rgba(226, 215, 246, 1);
+            width: 100%;
+            height: 7%;
+            left: 0;
+        }
+
+
+        .flex {
+            display: flex;
+        }
+
+        .push {
+            margin-left: auto;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            /* align-self: center; */
+            align-items: center;
+        }
+
+        .push-left {
+            margin-left: 20px;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            /* align-self: center; */
+            align-items: center;
+        }
+
+        .bar-bot-container {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .download-button {
+            margin-left: 20px;
+        }
+
+        .align-center-buttons {
+            justify-content: space-between;
+            padding: 0 40px 0 40px;
+        }
+
+        .certif-margin {
+            padding: 0 45px 0 45px;
+        }
+
+        .coding-padding-top {
+            padding-top: 5px;
+        }
+
+        .lang-left-side {
+            align-content: flex-start;
+        }
+
+        .romanian {
+            margin-left: 30px;
+        }
+
+        .russian {
+            margin-left: 54px;
+        }
+
+        .english {
+            margin-left: 61px;
+        }
+
+        .circle {
+            outline: solid rgba(172, 139, 231, 1);
+            border-radius: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(172, 139, 231, 1);
+            margin-right: 10px;
+        }
+
+        .circle-empty {
+            outline: solid rgba(28, 5, 67, 1);
+            border-radius: 20px;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(28, 5, 67, 1);
+            margin-right: 10px;
+
+        }
+
+        .push-marg-right {
+            margin-right: 10px;
+            color: rgba(28, 5, 67, 1);
+
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="main">
+    {% load i18n %}
+
+    <nav class="bar-top flex bar-bot-container">
+        <div class="push-left">
+            <a href="https://drive.google.com/file/d/19crFMLNCoBt-9r3OFqlZYo9NMSD2n67c/view?usp=sharing"
+               class="btn btn-outline-primary download-button" target="_blank" role="button">Download CV</a>
+        </div>
+        <div class="push">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == "en" %}
+                <a href="http://127.0.0.1:8000/en/" class="push-marg-right"><b>En</b></a>
+                <a href="http://127.0.0.1:8000/ru/" class="push-marg-right">Ru</a>
+                <a href="http://127.0.0.1:8000/ro/" class="push-marg-right">Ro</a>
+            {% elif LANGUAGE_CODE == "ru" %}
+                <a href="http://127.0.0.1:8000/en/" class="push-marg-right">En</a>
+                <a href="http://127.0.0.1:8000/ru/" class="push-marg-right"><b>Ru</b></a>
+                <a href="http://127.0.0.1:8000/ro/" class="push-marg-right">Ro</a>
+            {% else %}
+                <a href="http://127.0.0.1:8000/en/" class="push-marg-right">En</a>
+                <a href="http://127.0.0.1:8000/ru/" class="push-marg-right">Ru</a>
+                <a href="http://127.0.0.1:8000/ro/" class="push-marg-right"><b>Ro</b></a>
+            {% endif %}
+        </div>
+    </nav>
+
+
+    <div class="backgroud_div text-styling">
+        <div class="row container-background">
+            <div class="col-6">
+                <div class="box2-div coding-padding-top">
+                    <h3 class="languages-style"><b>{% translate "Coding" %}</b></h3>
+                    {% for elem_list in programing_skills %}
+                        <div class="h5-skills">
+                            {% for elem in elem_list %}
+                                {{ elem }}{% if not forloop.last %},{% endif %}
+                            {% endfor %}
+                        </div>
+                        <br>
+                    {% endfor %}
+                </div>
+
+                <div class="box2-div">
+                    <h3 class="languages-style"><b>{% translate "Other" %}</b></h3>
+                    {% for elem in other_skills %}
+                        <h5 class="h5-skills other-skills">{{ elem }}</h5>
+                    {% endfor %}
+
+                </div>
+                <div class="box2-div">
+                    <h3 class="languages-style"><b>{% translate "Languages" %}</b></h3>
+
+                    <div class="flex lang-left-side">
+                        <div>
+                            <h4>English</h4>
+                        </div>
+                        <div class="english flex">
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                        </div>
+                    </div>
+
+                    <div class="flex lang-left-side">
+                        <div>
+                            <h4>Russian</h4>
+                        </div>
+                        <div class="russian flex">
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                        </div>
+                    </div>
+
+                    <div class="flex lang-left-side">
+                        <div>
+                            <h4>Romanian</h4>
+                        </div>
+                        <div class="romanian flex">
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                            <div class="circle">&nbsp;</div>
+                            <!--<div class="circle-empty">&nbsp;</div>
+                            <div class="circle-empty">&nbsp;</div>-->
+
+                            <!--<h4><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></h4>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6">
+                <div>
+                    <div class="container">
+
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item container active">
+                                    <div class="container">
+                                        <h4>
+                                            {% blocktranslate %}Online store - Django backend API for a separate JS
+                                                frontend app{% endblocktranslate %}
+                                        </h4>
+                                        <div class="row">
+                                            <img class="d-block w-100 img-max-w img-outline"
+                                                 src="img/img111.jpg"
+                                                 alt="First slide">
+                                            <div class="buttons-padding flex align-center-buttons">
+                                                <div><a class="btn btn-primary btn-lg button-padding"
+                                                        href="https://github.com/AlexBasso/Online-store"
+                                                        target="_blank"
+                                                        role="button">GitHub</a>
+                                                </div>
+                                                <div><a class="btn btn-primary btn-lg button-padding"
+                                                        href="http://89.223.124.144:8001/"
+                                                        target="_blank"
+                                                        role="button">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <h4> {% blocktranslate %}Online product/order website with various API - Django
+                                            backend API with basic HTML frontend{% endblocktranslate %}</h4>
+                                        <div class="row">
+
+                                            <img class="d-block w-100 img-max-w img-outline"
+                                                 src="img/img222.jpg"
+                                                 alt="Second slide">
+                                            <div class="buttons-padding flex align-center-buttons">
+                                                <div>
+                                                    <a class="btn btn-primary btn-lg button-padding"
+                                                       href="https://github.com/AlexBasso/product_order-website"
+                                                       target="_blank"
+                                                       role="button">GitHub</a>
+                                                </div>
+                                                <div>
+                                                    <a class="btn btn-primary btn-lg button-padding"
+                                                       href="http://89.223.124.144:8000/"
+                                                       target="_blank"
+                                                       role="button">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <h4>
+                                            {% blocktranslate %}Weather forecasting Bot for Telegram - made with Aiogram
+                                                framework
+                                            {% endblocktranslate %}
+                                        </h4>
+                                        <div class="row">
+
+                                            <img class="d-block w-100 img-max-w img-outline"
+                                                 src="img/img333.jpg"
+                                                 alt="T slide">
+                                            <div class="buttons-padding flex align-center-buttons">
+                                                <a class="btn btn-primary btn-lg button-padding"
+                                                   href="https://github.com/AlexBasso/Weather_bot_telegram"
+                                                   target="_blank"
+                                                   role="button">GitHub</a>
+                                                <a class="btn btn-primary btn-lg button-padding"
+                                                   href="https://t.me/username_Tbot_1_bot"
+                                                   target="_blank"
+                                                   role="button">Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="box2-div certif-margin">
+                    <h3 class="languages-style"><b>{% translate "Certificates" %}</b></h3>
+                    <div class="">
+                        <h4>Skillbox - Python Developer 2023 January</h4>
+                        <h4 class="">English - TOEFL C1</h4>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <nav class="bar-bot bar-bot-container">
+        <a href="https://www.linkedin.com/in/alexandrbasso/"><img
+                class="img-links-resizer"
+                src="img/linkedin.png" alt="linkedin"></a>
+        <a href="mailto:alexandr.basso@gmail.com"><img class="img-links-resizer" src="img/gmail.png"
+                                                       alt="email"></a>
+        <a href="https://github.com/AlexBasso"><img class="img-links-resizer" src="img/github-sign.png"
+                                                    alt="githubimg"></a>
+        <a href="tel:+37378870065" class="img-links-resizer">Tel:+37378870065</a>
+    </nav>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

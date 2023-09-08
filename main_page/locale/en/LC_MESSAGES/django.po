@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-28 13:28+0300\n"
+"POT-Creation-Date: 2023-09-08 15:15+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,45 +30,69 @@ msgstr ""
 msgid "Romanian"
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:204
+#: .\mypage\templates\mypage\index.html:205
 msgid "Projects"
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:217
+#: .\mypage\templates\mypage\index.html:218
 msgid ""
 "Online store - Django backend API for a separate JS frontend\n"
 "                                        app"
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:250
+#: .\mypage\templates\mypage\index.html:251
 msgid ""
 "Online product/order website with various API - Django backend\n"
 "                                    API\n"
 "                                    with basic HTML frontend"
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:285
+#: .\mypage\templates\mypage\index.html:286
 msgid ""
 "Weather Bot for Telegram - made with Aiogram\n"
 "                                    "
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:335
+#: .\mypage\templates\mypage\index.html:336
 msgid "About me"
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:340
+#: .\mypage\templates\mypage\index.html:341
+#: .\mypage\templates\mypage\index2.html:339
 msgid "Coding"
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:352
+#: .\mypage\templates\mypage\index.html:353
+#: .\mypage\templates\mypage\index2.html:358
 msgid "Languages"
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:389
+#: .\mypage\templates\mypage\index.html:390
+#: .\mypage\templates\mypage\index2.html:351
 msgid "Other"
 msgstr ""
 
-#: .\mypage\templates\mypage\index.html:400
+#: .\mypage\templates\mypage\index.html:401
+#: .\mypage\templates\mypage\index2.html:512
 msgid "Certificates"
+msgstr ""
+
+#: .\mypage\templates\mypage\index2.html:423
+msgid ""
+"Online store - Django backend API for a separate JS\n"
+"                                                frontend app"
+msgstr ""
+
+#: .\mypage\templates\mypage\index2.html:447
+msgid ""
+"Online product/order website with various API - Django\n"
+"                                            backend API with basic HTML "
+"frontend"
+msgstr ""
+
+#: .\mypage\templates\mypage\index2.html:474
+msgid ""
+"Weather forecasting Bot for Telegram - made with Aiogram\n"
+"                                                framework\n"
+"                                            "
 msgstr ""
