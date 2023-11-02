@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ get_current_language }}/css/normalize.css" type="text/css" media="screen">
+
+</head>
+
+<style>
+    body {
+        font-family: BOLD;
+        margin: 0;
+        padding: 0;
+    {#         background-color: #FAFAFA; #} font: 12pt "Tahoma";
+    }
+
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    .page {
+        width: 21cm;
+        min-height: 29.7cm;
+        padding: 2cm;
+        margin: 1cm auto;
+    {#border: 1px #D3D3D3 solid;#} border-radius: 5px;
+        background: white;
+    {#         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); #}
+    }
+
+    .subpage {
+    {#padding: 1cm;#}{# border: 1px red solid; #} height: 256mm;
+    {#    outline: 2cm #FFEAEA solid;#}{# background: #ffffff; #}
+
+    }
+
+    @font-face {
+        font-family: myFirstFont;
+        src: url(css/Tempestua_D.otf);
+    }
+
+    @font-face {
+        font-family: mySecondtFont;
+        src: url(css/Galleds_Stars.otf);
+    }
+
+    @font-face {
+        font-family: myThirdFont;
+        src: url(css/CarteBlanche_Demo.ttf);
+    }
+
+    @font-face {
+        font-family: myFourthtFont;
+        src: url(css/Bistecca.ttf);
+    }
+
+    .cv-container {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .name-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15vh;
+    }
+
+    .name-div {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    .name-text-1 {
+        size: A4;
+        text-align: center;
+        font-family: myFirstFont;
+        font-size: 30px;
+    }
+
+    .name-text-2 {
+        text-align: center;
+        font-family: mySecondtFont;
+        font-size: 15px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        height: 40vh;
+        align-items: center;
+    }
+
+    .colzz {
+        padding: 10px;
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colzz:nth-child(2) {
+        border-left: 2px solid;
+    }
+
+    .right-align {
+        align-items: flex-end;
+    }
+
+    .right-left {
+        align-items: flex-start;
+    }
+
+    .content-header {
+        font-size: 20px;
+    }
+
+    .content-mar-general {
+        margin-bottom: 7px;
+    }
+
+    .content-mar-general-bot {
+        margin-bottom: 15px;
+    }
+
+    .content-mar-bop {
+        margin-bottom: 1px;
+    }
+
+    .content-desc-font {
+        font-size: 12px;
+    }
+
+    .text-align-left {
+        text-align: left;
+    }
+
+    .photo {
+        height: 200px;
+    }
+
+    .parent {
+        position: relative;
+        top: 0;
+        left: 20%;
+    }
+
+    .image1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 130px;
+        border-radius: 50%;
+        outline: solid #fee064;
+        background: #fee064;
+    }
+
+    .image2 {
+        position: absolute;
+        top: 0;
+        left: 65px;
+        width: 35%;
+        border-radius: 50%;
+    }
+
+    .grayscale {
+        filter: grayscale(10%);
+    }
+
+    .container {
+        background-color: rgb(192, 192, 192);
+        width: 60%;
+        height: 5px;
+        border-radius: 15px;
+        direction: rtl;
+    }
+
+    .skill {
+        background-color: rgb(116, 194, 92);
+        color: white;
+        padding: 1%;
+        text-align: right;
+        border-radius: 15px;
+
+    }
+
+    .python {
+        width: 80%;
+    }
+
+    .django {
+        width: 70%;
+    }
+
+    .html-css {
+        width: 50%;
+    }
+
+    .progress-bar-marg {
+        margin-bottom: 10px;
+        margin-top: 2px;
+    }
+
+    .content-mar-lang-top {
+        margin-top: 15px;
+    }
+
+    .content-mar-lang-top-2 {
+        margin-top: 3px;
+
+    }
+
+    .footer-margin-top {
+        margin-top: 55px;
+    }
+
+    .img-links-resizer {
+        max-width: 15%;
+        min-width: auto;
+        margin: auto;
+        margin-right: 15px;
+        margin-left: 125px;
+    }
+
+    .img-links-resizer-2 {
+        margin-right: 2px;
+        margin-left: 15px;
+
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    @media print {
+        .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }
+</style>
+<body>
+<div class="book">
+    <div class="page">
+        <div class="subpage">
+            <div class="cv-container photo ">
+                <div class="parent ">
+                    <div class="center">
+                        <div class="image1"></div>
+                        <img class="image2 grayscale " src="img/my_mug.jpeg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="name-container">
+                <div class="name-div ">
+                    <div class="name-text-1">Alexandr Basso</div>
+                    <div class="name-text-2">Python Developer</div>
+                </div>
+
+            </div>
+
+            <div class="content-container name-text-2">
+                <div class="colzz right-align">
+                    <div class="content-header content-mar-general"><b>demo projects</b></div>
+                    <div>visit my website:</div>
+                    <div class="content-mar-general-bot content-desc-font">
+                        <a href="http://89.223.124.144:8002/">http://89.223.124.144:8002/</a>
+                    </div>
+
+                    <div class="content-header content-mar-general"><b>competencies</b></div>
+
+                    <div class="name-text-2">Python</div>
+                    <div class="container progress-bar-marg ">
+                        <div class="skill python "></div>
+                    </div>
+
+                    <div class="name-text-2 ">HTML, CSS</div>
+                    <div class="container progress-bar-marg">
+                        <div class="skill html-css"></div>
+                    </div>
+
+                    <div class="name-text-2">Django</div>
+                    <div class="container progress-bar-marg content-mar-general-bot ">
+                        <div class="skill django"></div>
+                    </div>
+
+
+                    <div>DRF, Flask, Git, Linux</div>
+                    <div>API, Bash, Docker, Swagger</div>
+                    <div>SQLite, MySQL, PostgreSQL, Postman API</div>
+                    <div>NumPy, Pandas, Aiogram, Odoo</div>
+                    <div>OOP, DRY, SOLID, CRUD, KISS</div>
+
+                    <div class="content-mar-lang-top">
+                        <a href="https://www.linkedin.com/in/alexandrbasso/"><img
+                                class="img-links-resizer"
+                                src="img/linkedin.png" alt="linkedin"></a>
+                        <a href="https://github.com/AlexBasso"><img class="img-links-resizer img-links-resizer-2"
+                                                                    src="img/github-sign.png"
+                                                                    alt="githubimg"></a>
+                    </div>
+                    <div class="content-header content-mar-general content-mar-lang-top-2">
+                        <b>languages</b>
+                    </div>
+                    <div>English: TOEFL C1</div>
+                    <div>Russian: Native</div>
+                    <div>Romanian: B2</div>
+                    <div>Italian: A1</div>
+
+
+                </div>
+
+
+                <div class="colzz right-left">
+
+
+                    <div class="content-header content-mar-general"><b>experience</b></div>
+                    <div><b>june 2023 - present</b></div>
+                    <div class="content-mar-bop name-text-2">Ascoli SRL, MD - Python/Django developer</div>
+                    <div class="content-mar-general-bot content-desc-font text-align-left">Created Django application as a
+                        pipline to process incoming documentation, store it in DB, provide statistics/analytics and API
+                        for connecting to 1C
+                    </div>
+
+                    <div><b>august 2022 - november 2022</b></div>
+                    <div class="content-mar-bop name-text-2">OilTech SRL, MD - Python Developer</div>
+                    <div class="content-mar-bop content-desc-font text-align-left">Made API for connecting Odoo framework with 1C
+                    </div>
+
+
+                    <div class="content-header content-mar-general"><b>courses</b></div>
+                    <div><b>2023 - present</b></div>
+                    <div class="content-mar-general-bot content-desc-font">Skillbox - Python Developer course</div>
+
+                    <div class="content-header content-mar-general"><b>other experience</b></div>
+
+                    <div><b>2012 - 2022</b></div>
+                    <div class="content-mar-bop name-text-2">C.B.P. SA, MD - Executive Director</div>
+                    <div class="content-mar-bop name-text-2">BA Spes Total, MD - Director General</div>
+                    <div class="content-mar-bop name-text-2">Unifun, MD - Account Manager</div>
+                    <div class="content-mar-bop name-text-2">Other</div>
+
+                    <div class="content-header content-mar-general"><b>education</b></div>
+                    <div><b>2008 - 2012</b></div>
+                    <div class="content-mar-bop name-text-2">Master - Entrepreneurship and Strategy</div>
+                    <div class="name-text-2">Bachelor - International Econ. & Business</div>
+
+
+                </div>
+
+            </div>
+
+            <div class="cv-container name-text-2 footer-margin-top">
+                alexandr.basso@gmail.com - +37378870065
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
