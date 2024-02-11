@@ -23,7 +23,7 @@
     .page {
         width: 21cm;
         min-height: 29.7cm;
-        padding: 2cm;
+        padding: 1cm;
         margin: 1cm auto;
     {#border: 1px #D3D3D3 solid;#} border-radius: 5px;
         background: white;
@@ -59,6 +59,7 @@
     .cv-container {
         padding: 15px;
         margin: 15px;
+    {#padding-bottom: 90px;#}
     }
 
     .name-container {
@@ -66,6 +67,7 @@
         align-items: center;
         justify-content: center;
         height: 15vh;
+        padding-top: 80px;
     }
 
     .name-div {
@@ -92,6 +94,7 @@
         flex-direction: row;
         height: 40vh;
         align-items: center;
+        padding-top: 70px;
     }
 
     .colzz {
@@ -115,6 +118,7 @@
 
     .content-header {
         font-size: 20px;
+        padding-top: 5px;
     }
 
     .content-mar-general {
@@ -145,15 +149,16 @@
         position: relative;
         top: 0;
         left: 20%;
+        margin-left: 20px;
     }
 
     .image1 {
         position: relative;
         top: 0;
         left: 0;
-        width: 25%;
-        height: 130px;
-        border-radius: 50%;
+        width: 22%;
+        height: 150px;
+        border-radius: 100%;
         outline: solid #fee064;
         background: #fee064;
     }
@@ -205,7 +210,7 @@
     }
 
     .content-mar-lang-top {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     .content-mar-lang-top-2 {
@@ -213,8 +218,12 @@
 
     }
 
+    .content-date {
+        margin-bottom: 2px;
+    }
+
     .footer-margin-top {
-        margin-top: 55px;
+        margin-top: 95px;
     }
 
     .img-links-resizer {
@@ -222,13 +231,12 @@
         min-width: auto;
         margin: auto;
         margin-right: 15px;
-        margin-left: 125px;
+        margin-left: 175px;
     }
 
     .img-links-resizer-2 {
         margin-right: 2px;
         margin-left: 15px;
-
     }
 
     @page {
@@ -254,10 +262,10 @@
     <div class="page">
         <div class="subpage">
             <div class="cv-container photo ">
-                <div class="parent ">
+                <div class="parent">
                     <div class="center">
                         <div class="image1"></div>
-                        <img class="image2 grayscale " src="img/my_mug.jpeg"/>
+                        <img class="image2 grayscale" src="img/my_mug_2.jpg"/>
                     </div>
                 </div>
             </div>
@@ -273,6 +281,7 @@
                 <div class="colzz right-align">
                     <div class="content-header content-mar-general"><b>Demo projects</b></div>
                     <div>visit my website:</div>
+
                     <div class="content-mar-general-bot content-desc-font">
                         <a href="http://89.223.124.144:8002/">http://89.223.124.144:8002/</a>
                     </div>
@@ -282,11 +291,26 @@
                     <div class="name-text-2">Python, Django, HTML, CSS</div>
 
 
-                    <div>DRF, Flask, Git, Linux</div>
-                    <div>API, Bash, Docker, Swagger</div>
-                    <div>SQLite, MySQL, PostgreSQL, Postman API</div>
-                    <div>NumPy, Pandas, Aiogram, Odoo, Cobol</div>
-                    <div>OOP, DRY, SOLID, CRUD, KISS</div>
+                    <div>DRF, Flask, Git, Linux, Bash</div>
+                    <div>Tableau, Pandas, NumPy, SQL</div>
+                    <div>Docker, Swagger, API, OOP</div>
+
+                    <div>Aiogram, Postgres, Postman</div>
+                    <div>Cobol, Odoo, Godot</div>
+
+
+                    <div class="content-header content-mar-general"><b>Courses</b></div>
+                    <div class="content-date"><i>2023</i></div>
+
+                    <div>Skillbox - Python Developer course</div>
+
+                    <div class="content-header content-mar-general content-mar-lang-top-2">
+                        <b>Languages</b>
+                    </div>
+                    <div>English: TOEFL C1</div>
+                    <div>Russian: Native</div>
+                    <div>Romanian: B2</div>
+                    <div>Italian: A1</div>
 
                     <div class="content-mar-lang-top">
                         <a href="https://www.linkedin.com/in/alexandrbasso/"><img
@@ -297,20 +321,6 @@
                                                                     alt="githubimg"></a>
                     </div>
 
-                    <div class="content-header content-mar-general"><b>Courses</b></div>
-                    <div><i>2023</i></div>
-
-                    <div class=" content-desc-font">Skillbox - Python Developer course</div>
-
-                    <div class="content-header content-mar-general content-mar-lang-top-2">
-                        <b>Languages</b>
-                    </div>
-                    <div>English: TOEFL C1</div>
-                    <div>Russian: Native</div>
-                    <div>Romanian: B2</div>
-                    <div>Italian: A1</div>
-
-
                 </div>
 
 
@@ -319,32 +329,35 @@
 
                     <div class="content-header content-mar-general"><b>Experience</b></div>
                     <div class="content-mar-bop name-text-2"><b>Cedacri, MD - Back-end developer</b></div>
-                    <div><i>October 2023- present</i></div>
-                    <div class="content-mar-general-bot content-desc-font text-align-left">Maintaining Cobol back-end systems
+                    <div class="content-date"><i>October 2023 - present</i></div>
+                    <div class="content-mar-general-bot content-desc-font text-align-left">Maintaining Cobol back-end
+                        systems
                     </div>
 
                     <div class="content-mar-bop name-text-2"><b>Ascoli SRL, MD - Python/Django developer</b></div>
-                    <div><i>January 2023 - October</i></div>
+                    <div class="content-date"><i>January 2023 - October</i></div>
                     <div class="content-mar-general-bot content-desc-font text-align-left">Created Django application as
                         a pipline to process incoming documentation, store it in DB, provide statistics/analytics and
-                        API for connecting to 1C</div>
+                        API for connecting to 1C
+                    </div>
 
                     <div class="content-mar-bop name-text-2"><b>OilTech SRL, MD - Python Developer</b></div>
-                    <div><i>August 2022 - November 2022</i></div>
+                    <div class="content-date"><i>August 2022 - November 2022</i></div>
                     <div class="content-mar-general-bot content-desc-font text-align-left">Made API for connecting Odoo
-                        framework with 1C
+                        with 1C
                     </div>
 
 
                     <div class="content-header content-mar-general"><b>Other experience</b></div>
 
-                    <div><i>2012 - 2022</i></div>
+                    <div class="content-date"><i>2012 - 2022</i></div>
                     <div class="content-mar-bop name-text-2">Managerial skills of teams up to 10 people</div>
                     <div class="content-mar-bop name-text-2">Worked on international projects</div>
                     <div class="content-mar-bop name-text-2">Finished FullStack Python/Django projects</div>
 
                     <div class="content-header content-mar-general"><b>Education</b></div>
-                    <div><i>2008 - 2012</i></div>
+                    <div class="content-date"><i>2008 - 2012 </i></div>
+                    <div class="content-mar-bop name-text-2"><b>Erasmus School of Economics - Netherlands</b></div>
                     <div class="content-mar-bop name-text-2">Master - Entrepreneurship and Strategy</div>
                     <div class="name-text-2">Bachelor - International Econ. & Business</div>
 

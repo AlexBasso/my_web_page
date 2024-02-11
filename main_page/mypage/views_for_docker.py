@@ -46,19 +46,11 @@ class Index2View(APIView):
         # print('printing request.data: ', request.data)
         data = request.data
         data["data1"] = 'Some text'
-        # programing_skills = [["Python", "Django", "DRF", "Flask", "Git", "API"],
-        #                      ["HTML", "CSS", "Bootstrap", "Ajax", "Postman"],
-        #                      ["SQL", "PostgreSQL", "NumPy", "Pandas", "Agile", "Odoo"],
-        #                      ["Docker", "Swagger", "Aiogram"],
-        #                      ["OOP", "DRY", "SOLID", "CRUD", "KISS"]]
-
-        programing_skills = [["Python", "Django", "DRF", "HTML", "CSS"],
-                             ["Tableau", "Pandas", "NumPy", "SQL"],
-                             ["Docker", "Flask", "Linux", "Git", "Bash"],
-                             ["Swagger", "Agile", "API", "OOP"],
-                             ["Aiogram", "PostgreSQL", "Postman"],
-                             ["Cobol", "Odoo", "Godot"]]
-
+        programing_skills = [["Python", "Django", "DRF", "Flask", "Git", "API"],
+                             ["HTML", "CSS", "Bootstrap", "Ajax", "Postman"],
+                             ["SQL", "PostgreSQL", "NumPy", "Pandas", "Agile", "Odoo"],
+                             ["Docker", "Swagger", "Aiogram"],
+                             ["OOP", "DRY", "SOLID", "CRUD", "KISS"]]
         # programing_skills = "Python, Django, DRF, Git, API, SQLite, MySQL, PostgreSQL, Flask, HTML, CSS, Bootstrap, Aiogram, Docker, Swagger, OOP, DRY, SOLID CRUD KISS principles, Ajax, NumPy, Pandas, Agile, Postman, GitHub, GitLab, Odoo framework "
         data["programing_skills"] = programing_skills
         other_skills = ["Team player", "Project Management", "Time management", "Administration", "Accounting"]

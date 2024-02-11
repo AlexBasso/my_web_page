@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-08 15:15+0300\n"
+"POT-Creation-Date: 2024-02-11 16:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: .\main_page\settings.py:141
+#: .\main_page\settings.py:129
 msgid "English"
 msgstr "Engleză"
 
-#: .\main_page\settings.py:142
+#: .\main_page\settings.py:130
 msgid "Russian"
 msgstr "Rusă"
 
-#: .\main_page\settings.py:143
+#: .\main_page\settings.py:131
 msgid "Romanian"
 msgstr "Română"
 
@@ -62,47 +62,57 @@ msgid "About me"
 msgstr "Despre mine"
 
 #: .\mypage\templates\mypage\index.html:341
-#: .\mypage\templates\mypage\index2.html:339
+#: .\mypage\templates\mypage\index2.html:340
 msgid "Coding"
 msgstr "Programare"
 
 #: .\mypage\templates\mypage\index.html:353
-#: .\mypage\templates\mypage\index2.html:358
+#: .\mypage\templates\mypage\index2.html:359
 msgid "Languages"
 msgstr "Limbi"
 
 #: .\mypage\templates\mypage\index.html:390
-#: .\mypage\templates\mypage\index2.html:351
+#: .\mypage\templates\mypage\index2.html:352
 msgid "Other"
 msgstr "Alte"
 
 #: .\mypage\templates\mypage\index.html:401
-#: .\mypage\templates\mypage\index2.html:512
+#: .\mypage\templates\mypage\index2.html:538
 msgid "Certificates"
 msgstr "Certificate"
 
-#: .\mypage\templates\mypage\index2.html:423
+#: .\mypage\templates\mypage\index2.html:424
+#, fuzzy
+#| msgid ""
+#| "Online store - Django backend API for a separate JS\n"
+#| "                                                frontend app"
+msgid ""
+"Data Analytics project - Tableau,\n"
+"                                            Pandas"
+msgstr ""
+"Magazin online - Django backend API pentru o aplicație JS frontală separată"
+
+#: .\mypage\templates\mypage\index2.html:474
 msgid ""
 "Online store - Django backend API for a separate JS\n"
 "                                                frontend app"
 msgstr ""
 "Magazin online - Django backend API pentru o aplicație JS frontală separată"
 
-#: .\mypage\templates\mypage\index2.html:447
-msgid ""
-"Online product/order website with various API - Django\n"
-"                                            backend API with basic HTML "
-"frontend"
-msgstr ""
-"Site-ul web de produse/comenzi online cu diverse API - Django backend API cu "
-"front-end HTML de bază"
-
-#: .\mypage\templates\mypage\index2.html:474
+#: .\mypage\templates\mypage\index2.html:500
 msgid ""
 "Weather forecasting Bot for Telegram - made with Aiogram\n"
 "                                                framework\n"
 "                                            "
 msgstr "Bot de prognoză meteo pentru Telegram - realizat cu framework Aiogram"
+
+#~ msgid ""
+#~ "Online product/order website with various API - Django\n"
+#~ "                                            backend API with basic HTML "
+#~ "frontend"
+#~ msgstr ""
+#~ "Site-ul web de produse/comenzi online cu diverse API - Django backend API "
+#~ "cu front-end HTML de bază"
 
 #~ msgid "Welcome to our page"
 #~ msgstr "Bine ați venit pe pagina noastră"

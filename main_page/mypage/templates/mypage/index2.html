@@ -81,8 +81,8 @@
 
 
         .img-max-w {
-            width: 100%;
-            max-height: 400px;
+        {#width: 100%;#} max-width: 100%;
+            max-height: 530px;
         }
 
         .buttons-padding {
@@ -175,12 +175,13 @@
             padding: 25px;
             border-radius: 20px;
             width: 80%;
-            height: 90%;
+            height: 90vh;
 
         }
 
         .backgroud_div {
             background-image: url('img/simple-blue.jpg');
+            height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -417,7 +418,57 @@
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
-                                <div class="carousel-item container active">
+                                <div class="carousel-item active">
+                                    <div class="container">
+
+                                        <h4> {% blocktranslate %}Data Analytics project - Tableau,
+                                            Pandas{% endblocktranslate %}</h4>
+                                        <div class="row">
+
+                                            <img class="d-block w-100 img-max-w img-outline"
+                                                 src="img/tableau.jpg"
+                                                 alt="Second slide">
+                                            <div class="buttons-padding flex align-center-buttons">
+                                                <div>
+                                                    <a class="btn btn-primary btn-lg button-padding"
+                                                       href="https://github.com/AlexBasso/DataAnalytics"
+                                                       target="_blank"
+                                                       role="button">GitHub</a>
+                                                </div>
+                                                <div>
+                                                    <a class="btn btn-primary btn-lg button-padding"
+                                                       href="http://89.223.124.144:8003/"
+                                                       target="_blank"
+                                                       role="button">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {#                                        <h4> {% blocktranslate %}Online product/order website with various API - Django#}
+                                        {#                                            backend API with basic HTML frontend{% endblocktranslate %}</h4>#}
+                                        {#                                        <div class="row">#}
+                                        {##}
+                                        {#                                            <img class="d-block w-100 img-max-w img-outline"#}
+                                        {#                                                 src="img/img222.jpg"#}
+                                        {#                                                 alt="Second slide">#}
+                                        {#                                            <div class="buttons-padding flex align-center-buttons">#}
+                                        {#                                                <div>#}
+                                        {#                                                    <a class="btn btn-primary btn-lg button-padding"#}
+                                        {#                                                       href="https://github.com/AlexBasso/product_order-website"#}
+                                        {#                                                       target="_blank"#}
+                                        {#                                                       role="button">GitHub</a>#}
+                                        {#                                                </div>#}
+                                        {#                                                <div>#}
+                                        {#                                                    <a class="btn btn-primary btn-lg button-padding"#}
+                                        {#                                                       href="http://89.223.124.144:8000/"#}
+                                        {#                                                       target="_blank"#}
+                                        {#                                                       role="button">Demo</a>#}
+                                        {#                                                </div>#}
+                                        {#                                            </div>#}
+                                        {#                                        </div>#}
+                                    </div>
+                                </div>
+                                <div class="carousel-item container">
                                     <div class="container">
                                         <h4>
                                             {% blocktranslate %}Online store - Django backend API for a separate JS
@@ -442,32 +493,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="container">
-                                        <h4> {% blocktranslate %}Online product/order website with various API - Django
-                                            backend API with basic HTML frontend{% endblocktranslate %}</h4>
-                                        <div class="row">
 
-                                            <img class="d-block w-100 img-max-w img-outline"
-                                                 src="img/img222.jpg"
-                                                 alt="Second slide">
-                                            <div class="buttons-padding flex align-center-buttons">
-                                                <div>
-                                                    <a class="btn btn-primary btn-lg button-padding"
-                                                       href="https://github.com/AlexBasso/product_order-website"
-                                                       target="_blank"
-                                                       role="button">GitHub</a>
-                                                </div>
-                                                <div>
-                                                    <a class="btn btn-primary btn-lg button-padding"
-                                                       href="http://89.223.124.144:8000/"
-                                                       target="_blank"
-                                                       role="button">Demo</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="carousel-item">
                                     <div class="container">
                                         <h4>
